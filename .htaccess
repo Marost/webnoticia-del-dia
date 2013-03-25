@@ -336,6 +336,11 @@ FileETag None
 # RewriteBase /
 </IfModule>
 
+RewriteRule ^noticias$                          /noticias.php
+RewriteRule ^nota/([0-9]*)-(.*)$                /nota.php?id=$1&url=$2
+RewriteRule ^entrevistas$                       /entrevistas.php
+RewriteRule ^entrevista/([0-9]*)-(.*)$          /entrevista.php?id=$1&url=$2
+RewriteRule ^panel@pichling/$                   /panel@pichling/login.php
 
 # ----------------------------------------------------------------------
 # Suppress or force the "www." at the beginning of URLs
